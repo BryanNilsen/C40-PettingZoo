@@ -4,52 +4,57 @@ from datetime import date
 #  WALKING ANIMALS
 
 class Llama():
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
+        self.shift = shift
         self.walking = True
 
 
 class Giraffe():
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
+        self.shift = shift
         self.walking = True
 
 
 class Goat():
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
+        self.shift = shift
         self.walking = True
 
 
 class Burro():
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
+        self.shift = shift
         self.walking = True
 
 
 class Pig():
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
+        self.shift = shift
         self.walking = True
 
 
@@ -159,17 +164,20 @@ class Lizard():
 
 # Make instances of each
 chompy = Alligator("Chompy", "American Alligator")
-carne_asada = Burro("Carne Asada", "Donkey")
+carne_asada = Burro("Carne Asada", "Donkey", "midday")
 quackers = Duck("Quackers", "Mallard")
 finley = Fish("Finley", "Koi")
-mr_neck = Giraffe("Mr. Neck", "Masai Giraffe")
-emjay = Goat("Emjay", "Mountain Goat")
+mr_neck = Giraffe("Mr. Neck", "Masai Giraffe", "morning")
+emjay = Goat("Emjay", "Mountain Goat", "evening")
 elizardbeth = Lizard("Elizardbeth", "Gecko")
-dolly = Llama("Dolly", "Miniature Llama")
+dolly = Llama("Dolly", "Miniature Llama", "midday")
 whiskers = Otter("Whiskers", "River Otter")
-porkchop = Pig("Porkchop", "Pot-Bellied Pig")
+porkchop = Pig("Porkchop", "Pot-Bellied Pig", "morning")
 donald = Slug("Donald", "Disgusting Slug")
 shelly = Snail("Shelly", "Garden Snail")
 lindsey = Snake("Lindsey", "Ratsnake")
 mitch = Turtle("Mitch", "Tortoise")
 slippy = Worm("Slippy", "Earthworm")
+
+
+print(f'{dolly.name} the {dolly.species} is available to pet during the {dolly.shift} shift.')
