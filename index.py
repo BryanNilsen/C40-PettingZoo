@@ -37,8 +37,8 @@ friendly_farm.admit_animal(mr_neck)
 friendly_farm.admit_animal(emjay)
 friendly_farm.admit_animal(porkchop)
 # Slitherland
-slitherland.admit_animal(elizardbeth)
-slitherland.admit_animal(donald)
+# slitherland.admit_animal(elizardbeth)
+# slitherland.admit_animal(donald)
 slitherland.admit_animal(shelly)
 slitherland.admit_animal(slippy)
 slitherland.admit_animal(lindsey)
@@ -50,7 +50,6 @@ critter_creek.admit_animal(whiskers)
 critter_creek.admit_animal(mitch)
 
 
-#
 def attraction_animals_report(*attractions):
     '''  
     Print a report of all animals in each attraction
@@ -60,8 +59,7 @@ def attraction_animals_report(*attractions):
     print('::: ATTRACTION ANIMAL REPORT :::')
     print('')
     for attraction in attractions:
-        print(
-            f'{attraction.attraction_name} is where you will find {attraction.description}')
+        print(f'{attraction}')
         for animal in attraction.animals:
             print(f' . {animal.name} - {animal.species}')
         print('')
@@ -69,3 +67,5 @@ def attraction_animals_report(*attractions):
 
 # Print Report
 attraction_animals_report(friendly_farm, slitherland, critter_creek)
+
+print(friendly_farm)

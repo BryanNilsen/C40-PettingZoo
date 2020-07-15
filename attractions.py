@@ -11,6 +11,9 @@ class PettingZoo:
         self.animals.append(animal)
         # print(f'You have admitted {animal.name} the {animal.species}')
 
+    def __str__(self):
+        return f"{self.attraction_name} is a place where you will find {self.description}"
+
 
 class SnakePit:
 
@@ -23,6 +26,9 @@ class SnakePit:
         self.animals.append(animal)
         # print(f'You have admitted {animal.name} the {animal.species}')
 
+    def __str__(self):
+        return f"{self.attraction_name} is a place where you will find {self.description}"
+
 
 class Wetlands:
 
@@ -34,3 +40,6 @@ class Wetlands:
     def admit_animal(self, animal):
         self.animals.append(animal)
         # print(f'You have admitted {animal.name} the {animal.species}')
+
+    def __str__(self):
+        return f"{self.attraction_name} is a place where you will find {self.description}"
