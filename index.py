@@ -3,25 +3,25 @@ from attractions import *
 
 # Instantiate Animals
 # walkers
-carne_asada = Burro("Carne Asada", "Donkey", "midday")
-mr_neck = Giraffe("Mr. Neck", "Masai Giraffe", "morning")
-emjay = Goat("Emjay", "Mountain Goat", "evening")
-dolly = Llama("Dolly", "Miniature Llama", "midday")
-porkchop = Pig("Porkchop", "Pot-Bellied Pig", "morning")
+carne_asada = Burro("Carne Asada", "Donkey", "midday", "hay")
+mr_neck = Giraffe("Mr. Neck", "Masai Giraffe", "morning", "hay")
+emjay = Goat("Emjay", "Mountain Goat", "evening", "grass")
+dolly = Llama("Dolly", "Miniature Llama", "midday", "hay")
+porkchop = Pig("Porkchop", "Pot-Bellied Pig", "morning", "corn")
 
 # swimmers
-chompy = Alligator("Chompy", "American Alligator")
-quackers = Duck("Quackers", "Mallard")
-finley = Fish("Finley", "Koi")
-whiskers = Otter("Whiskers", "River Otter")
-mitch = Turtle("Mitch", "Tortoise")
+chompy = Alligator("Chompy", "American Alligator", "chicken")
+quackers = Duck("Quackers", "Mallard", "fish")
+finley = Fish("Finley", "Koi", "worms")
+whiskers = Otter("Whiskers", "River Otter", "fish")
+mitch = Turtle("Mitch", "Tortoise", "lettuce")
 
 # slitherers
-elizardbeth = Lizard("Elizardbeth", "Gecko")
-donald = Slug("Donald", "Disgusting Slug")
-shelly = Snail("Shelly", "Garden Snail")
-lindsey = Snake("Lindsey", "Ratsnake")
-slippy = Worm("Slippy", "Earthworm")
+elizardbeth = Lizard("Elizardbeth", "Gecko", "crickets")
+donald = Slug("Donald", "Disgusting Slug", "lettuce")
+shelly = Snail("Shelly", "Garden Snail", "lettuce")
+lindsey = Snake("Lindsey", "Ratsnake", "mice")
+slippy = Worm("Slippy", "Earthworm", "grass")
 
 
 # Instantiate Attractions
