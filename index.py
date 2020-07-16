@@ -1,6 +1,7 @@
 from animals import *
 from attractions import *
 
+
 # Instantiate Animals
 # walkers
 carne_asada = Burro("Carne Asada", "Donkey", "midday", "hay", 1000)
@@ -63,7 +64,6 @@ def attraction_animals_report(*attractions):
         for animal in attraction.animals:
             print(f' . {animal.name} - {animal.species}')
         print('')
-
 
 
 # PRINT STATEMENTS
