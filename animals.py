@@ -4,7 +4,7 @@ from datetime import date
 #  WALKING ANIMALS
 
 class Llama():
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -13,6 +13,15 @@ class Llama():
         self.shift = shift
         self.walking = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -22,7 +31,7 @@ class Llama():
 
 
 class Giraffe():
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -31,6 +40,15 @@ class Giraffe():
         self.shift = shift
         self.walking = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -40,7 +58,7 @@ class Giraffe():
 
 
 class Goat():
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -49,6 +67,15 @@ class Goat():
         self.shift = shift
         self.walking = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -58,7 +85,7 @@ class Goat():
 
 
 class Burro():
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -67,6 +94,15 @@ class Burro():
         self.shift = shift
         self.walking = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -76,7 +112,7 @@ class Burro():
 
 
 class Pig():
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -85,7 +121,15 @@ class Pig():
         self.shift = shift
         self.walking = True
         self.food = food
+        self.__chip_num = chip_num
 
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
@@ -96,7 +140,7 @@ class Pig():
 #  SWIMMING ANIMALS
 
 class Otter():
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -104,6 +148,15 @@ class Otter():
         self.date_added = date.today()
         self.swimming = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -113,7 +166,7 @@ class Otter():
 
 
 class Fish():
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -121,6 +174,15 @@ class Fish():
         self.date_added = date.today()
         self.swimming = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -130,7 +192,7 @@ class Fish():
 
 
 class Duck():
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -138,6 +200,15 @@ class Duck():
         self.date_added = date.today()
         self.swimming = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -147,7 +218,7 @@ class Duck():
 
 
 class Alligator():
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -155,6 +226,15 @@ class Alligator():
         self.date_added = date.today()
         self.swimming = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -164,7 +244,7 @@ class Alligator():
 
 
 class Turtle():
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -172,6 +252,15 @@ class Turtle():
         self.date_added = date.today()
         self.swimming = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -179,11 +268,11 @@ class Turtle():
     def __str__(self):
         return f"{self.name} is a {self.species}"
 
-#  SLITHERING ANIMALS
 
+# Slithering Animals
 
 class Snake():
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -191,6 +280,15 @@ class Snake():
         self.date_added = date.today()
         self.slithering = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -200,7 +298,7 @@ class Snake():
 
 
 class Snail():
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -208,6 +306,15 @@ class Snail():
         self.date_added = date.today()
         self.slithering = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -217,7 +324,7 @@ class Snail():
 
 
 class Worm():
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -225,6 +332,15 @@ class Worm():
         self.date_added = date.today()
         self.slithering = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -234,7 +350,7 @@ class Worm():
 
 
 class Slug():
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -242,6 +358,15 @@ class Slug():
         self.date_added = date.today()
         self.slithering = True
         self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
@@ -251,10 +376,26 @@ class Slug():
 
 
 class Lizard():
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
+        self.food = food
+        self.__chip_num = chip_num
+
+    @property
+    def chip_num(self):
+        return self.__chip_num
+    
+    @chip_num.setter
+    def chip_num(self, number):
+        pass
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
