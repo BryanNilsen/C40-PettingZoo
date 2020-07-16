@@ -7,6 +7,10 @@ class PettingZoo:
         self.description = "cute and fuzzy critters to cuddle"
         self.animals = list()
 
+    @property
+    def last_critter_added(self):
+        return (f'{self.animals[-1].name} the {self.animals[-1].species}')
+
     def admit_animal(self, animal):
         self.animals.append(animal)
         # print(f'You have admitted {animal.name} the {animal.species}')
@@ -22,6 +26,10 @@ class SnakePit:
         self.description = "sleek, slithering critters to give you the creepy crawlies"
         self.animals = list()
 
+    @property
+    def last_critter_added(self):
+        return (f'{self.animals[-1].name} the {self.animals[-1].species}')
+
     def admit_animal(self, animal):
         self.animals.append(animal)
         # print(f'You have admitted {animal.name} the {animal.species}')
@@ -36,6 +44,10 @@ class Wetlands:
         self.attraction_name = name
         self.description = "swimming and splashing critters to smile at"
         self.animals = list()
+
+    @property
+    def last_critter_added(self):
+        return (f'{self.animals[-1].name} the {self.animals[-1].species}')
 
     def admit_animal(self, animal):
         self.animals.append(animal)
