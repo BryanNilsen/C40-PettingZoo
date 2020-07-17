@@ -1,6 +1,19 @@
+# explicitly write these out
 from animals import *
 from attractions import *
 
+bob = Goose("Bob", "Canada goose", "watercress sandwiches", 10123)
+bob.run()
+bob.swim()
+bob.honk()
+
+# Create an attraction
+varmint_village = PettingZoo("Varmint Village", "critters that like to dig and scurry")
+varmint_village.admit_animal(bob)
+
+print(varmint_village)
+for animal in varmint_village.animals:
+    print(animal)
 
 # Instantiate Animals
 # walkers
@@ -26,9 +39,9 @@ slippy = Worm("Slippy", "Earthworm", "grass", 1014)
 
 
 # Instantiate Attractions
-friendly_farm = PettingZoo("Friendly Farm")
-slitherland = SnakePit("Slither Land")
-critter_creek = Wetlands("Critter Creek")
+friendly_farm = PettingZoo("Friendly Farm", "cute and fuzzy critters to cuddle")
+slitherland = SnakePit("Slither Land", "sleek, slithering critters to give you the creepy crawlies")
+critter_creek = Wetlands("Critter Creek", "swimming and splashing critters to smile at")
 
 # Admit Animals to Attraction
 # Friendly Farm
