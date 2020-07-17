@@ -1,5 +1,11 @@
+# explicitly write these out
 from animals import *
 from attractions import *
+
+bob = Goose("Bob", "Canada goose", "watercress sandwiches", 10123)
+bob.run()
+bob.swim()
+bob.honk()
 
 
 # Instantiate Animals
