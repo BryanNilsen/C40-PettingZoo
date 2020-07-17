@@ -1,7 +1,8 @@
 class Attraction:
 
-    def __init__(self, name):
+    def __init__(self, name, description):
         self.attraction_name = name
+        self.description = description
         self.animals = list()
 
     @property
@@ -11,5 +12,11 @@ class Attraction:
     def admit_animal(self, animal):
         self.animals.append(animal)
 
+    def remove_animal(self, animal):
+        self.animals.remove(animal)
+
     def __str__(self):
         return f"{self.attraction_name} is a place where you will find {self.description}"
+    
+    def __len__(self):
+        return len(self.animals)
