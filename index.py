@@ -9,7 +9,10 @@ bob.honk()
 
 # Create an attraction
 varmint_village = PettingZoo("Varmint Village", "critters that like to dig and scurry")
-varmint_village.admit_animal(bob)
+varmint_village.add_animal(bob)
+
+varmint_village.add_animal_pythonic(bob)
+varmint_village.add_animal_type_check(bob)
 
 print(varmint_village)
 for animal in varmint_village.animals:
@@ -45,23 +48,23 @@ critter_creek = Wetlands("Critter Creek", "swimming and splashing critters to sm
 
 # Admit Animals to Attraction
 # Friendly Farm
-friendly_farm.admit_animal(dolly)
-friendly_farm.admit_animal(carne_asada)
-friendly_farm.admit_animal(mr_neck)
-friendly_farm.admit_animal(emjay)
-friendly_farm.admit_animal(porkchop)
+friendly_farm.add_animal(dolly)
+friendly_farm.add_animal(carne_asada)
+friendly_farm.add_animal(mr_neck)
+friendly_farm.add_animal(emjay)
+friendly_farm.add_animal(porkchop)
 # Slitherland
-# slitherland.admit_animal(elizardbeth)
-# slitherland.admit_animal(donald)
-slitherland.admit_animal(shelly)
-slitherland.admit_animal(slippy)
-slitherland.admit_animal(lindsey)
+# slitherland.add_animal(elizardbeth)
+# slitherland.add_animal(donald)
+slitherland.add_animal(shelly)
+slitherland.add_animal(slippy)
+slitherland.add_animal(lindsey)
 # Critter Creek
-critter_creek.admit_animal(chompy)
-critter_creek.admit_animal(quackers)
-critter_creek.admit_animal(finley)
-critter_creek.admit_animal(whiskers)
-critter_creek.admit_animal(mitch)
+critter_creek.add_animal(chompy)
+critter_creek.add_animal(quackers)
+critter_creek.add_animal(finley)
+critter_creek.add_animal(whiskers)
+critter_creek.add_animal(mitch)
 
 
 def attraction_animals_report(*attractions):

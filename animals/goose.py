@@ -1,6 +1,7 @@
 from .animal import Animal
 # The package syntax is what allows for these clean import statements
-from movements import Walking, Swimming
+from movements import Walking
+from movements import Swimming
 
 
 class Goose(Animal, Walking, Swimming):
