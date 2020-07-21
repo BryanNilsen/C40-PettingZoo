@@ -3,18 +3,20 @@ from animals import *
 from attractions import *
 
 bob = Goose("Bob", "Canada goose", "watercress sandwiches", 10123)
-bob.run()
-bob.swim()
-bob.honk()
+# bob.run()
+# bob.swim()
+# bob.honk()
 
 # Create an attraction
-varmint_village = PettingZoo("Varmint Village", "critters that like to dig and scurry")
-varmint_village.add_animal(bob)
+varmint_village = PettingZoo("The Varmint Village", "critters that love to be pet!")
 
-varmint_village.add_animal_pythonic(bob)
-varmint_village.add_animal_type_check(bob)
+dolly = Llama("Dolly", "miniature llama", "morning", "hay", "#1033")
+snappy = Alligator("Snappy", "American Alligator", "fish", "#1044")
 
-print(varmint_village)
+varmint_village.add_animal_pythonic(dolly)
+varmint_village.add_animal_type_check(dolly)
+varmint_village.add_animal_pythonic(snappy)
+
 for animal in varmint_village.animals:
     print(animal)
 
@@ -54,8 +56,8 @@ friendly_farm.add_animal(mr_neck)
 friendly_farm.add_animal(emjay)
 friendly_farm.add_animal(porkchop)
 # Slitherland
-# slitherland.add_animal(elizardbeth)
-# slitherland.add_animal(donald)
+slitherland.add_animal(elizardbeth)
+slitherland.add_animal(donald)
 slitherland.add_animal(shelly)
 slitherland.add_animal(slippy)
 slitherland.add_animal(lindsey)
@@ -84,8 +86,8 @@ def attraction_animals_report(*attractions):
 
 # PRINT STATEMENTS
 # Print Report
-attraction_animals_report(friendly_farm, slitherland, critter_creek)
+# attraction_animals_report(friendly_farm, slitherland, critter_creek)
 
-print(friendly_farm)
+# print(friendly_farm)
 
-print("Friendly Farm's Newest Animal is", friendly_farm.last_critter_added)
+# print("Friendly Farm's Newest Animal is", friendly_farm.last_critter_added)
