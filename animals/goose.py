@@ -1,6 +1,7 @@
 from .animal import Animal
 # The package syntax is what allows for these clean import statements
-from movements import Walking, Swimming
+from movements import Walking
+from movements import Swimming
 
 
 class Goose(Animal, Walking, Swimming):
@@ -10,8 +11,6 @@ class Goose(Animal, Walking, Swimming):
         Animal.__init__(self, name, species, food, chip_num)
         Swimming.__init__(self)
         Walking.__init__(self)
-        # no more self.swimming = True
-        ...
 
     def honk(self):
         print("The goose honks. A lot")

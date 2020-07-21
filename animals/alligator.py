@@ -1,7 +1,11 @@
 from .animal import Animal
+from movements import Swimming
 
 
 class Alligator(Animal):
     def __init__(self, name, species, food, chip_num):
-        super().__init__(name, species, food, chip_num)
-        self.walking = True
+        Animal.__init__(self, name, species, food, chip_num)
+        Swimming.__init__(self)
+
+    def __str__(self):
+        return f'{self.name} the alligator'

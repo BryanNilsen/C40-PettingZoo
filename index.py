@@ -3,15 +3,20 @@ from animals import *
 from attractions import *
 
 bob = Goose("Bob", "Canada goose", "watercress sandwiches", 10123)
-bob.run()
-bob.swim()
-bob.honk()
+# bob.run()
+# bob.swim()
+# bob.honk()
 
 # Create an attraction
-varmint_village = PettingZoo("Varmint Village", "critters that like to dig and scurry")
-varmint_village.admit_animal(bob)
+varmint_village = PettingZoo("The Varmint Village", "critters that love to be pet!")
 
-print(varmint_village)
+dolly = Llama("Dolly", "miniature llama", "morning", "hay", "#1033")
+snappy = Alligator("Snappy", "American Alligator", "fish", "#1044")
+
+varmint_village.add_animal_pythonic(dolly)
+varmint_village.add_animal_type_check(dolly)
+varmint_village.add_animal_pythonic(snappy)
+
 for animal in varmint_village.animals:
     print(animal)
 
@@ -45,23 +50,23 @@ critter_creek = Wetlands("Critter Creek", "swimming and splashing critters to sm
 
 # Admit Animals to Attraction
 # Friendly Farm
-friendly_farm.admit_animal(dolly)
-friendly_farm.admit_animal(carne_asada)
-friendly_farm.admit_animal(mr_neck)
-friendly_farm.admit_animal(emjay)
-friendly_farm.admit_animal(porkchop)
+friendly_farm.add_animal(dolly)
+friendly_farm.add_animal(carne_asada)
+friendly_farm.add_animal(mr_neck)
+friendly_farm.add_animal(emjay)
+friendly_farm.add_animal(porkchop)
 # Slitherland
-# slitherland.admit_animal(elizardbeth)
-# slitherland.admit_animal(donald)
-slitherland.admit_animal(shelly)
-slitherland.admit_animal(slippy)
-slitherland.admit_animal(lindsey)
+slitherland.add_animal(elizardbeth)
+slitherland.add_animal(donald)
+slitherland.add_animal(shelly)
+slitherland.add_animal(slippy)
+slitherland.add_animal(lindsey)
 # Critter Creek
-critter_creek.admit_animal(chompy)
-critter_creek.admit_animal(quackers)
-critter_creek.admit_animal(finley)
-critter_creek.admit_animal(whiskers)
-critter_creek.admit_animal(mitch)
+critter_creek.add_animal(chompy)
+critter_creek.add_animal(quackers)
+critter_creek.add_animal(finley)
+critter_creek.add_animal(whiskers)
+critter_creek.add_animal(mitch)
 
 
 def attraction_animals_report(*attractions):
@@ -81,8 +86,8 @@ def attraction_animals_report(*attractions):
 
 # PRINT STATEMENTS
 # Print Report
-attraction_animals_report(friendly_farm, slitherland, critter_creek)
+# attraction_animals_report(friendly_farm, slitherland, critter_creek)
 
-print(friendly_farm)
+# print(friendly_farm)
 
-print("Friendly Farm's Newest Animal is", friendly_farm.last_critter_added)
+# print("Friendly Farm's Newest Animal is", friendly_farm.last_critter_added)
